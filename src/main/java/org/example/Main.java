@@ -1,22 +1,37 @@
 package org.example;
 
 class Main {
-    public static int 달리자(int 속도, int 속력){
-        return 속도 - 속력;
+    static int a = 10;
+
+    public static int 더하기(int a, int b) {
+        return a + b;
     }
+
     public static void main(String[] args) {
-        자동차 a사 = new 자동차();
 
-        System.out.println(달리자(150,130));
+        System.out.println(a);
+         int a = 20;
+        System.out.println(a);
 
+        계산기.합(20,30);
+        계산기.합(20);
+        System.out.println(더하기(30,20));
+        exam();
+
+    }
+    public static void exam(){
+        System.out.println("a : " + a);
     }
 }
 
-class 자동차 {
+class 계산기 {
 
-     static void 달리다(int 최고속력, int 최소속력) {
+    static void 합(int c) {
+        System.out.println("c = " + c);
+    }
 
-        System.out.println(" 자동차가 최고속력 " + 최고속력 + "으로 달립니다.");
-
+    static void 합(int a, int b) {
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
     }
 }
